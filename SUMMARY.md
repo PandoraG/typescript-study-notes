@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [what](what.md)
+* [why](why.md)
 
 ## 简介 <a id="ji-chu"></a>
 
