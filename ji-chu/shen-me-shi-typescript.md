@@ -35,3 +35,20 @@
 
 大家可以根据自己团队和项目的情况判断是否需要使用 TypeScript。
 
+
+
+### TypeScript 和 JavaScript 有什么不同？
+
+|  | JavaScript | TypeScript |
+| :--- | :--- | :--- |
+| 1 | 它是由网景公司在 1995 年开发的。 | 它是 2012 年由安德斯·海尔斯伯格\(Anders Hejlsberg\)开发的。 |
+| 2 | JavaScript 源文件在”。js”扩展。 | TypeScript 源文件是”.ts”扩展名。 |
+| 3 | JavaScript 不支持 ES6。 | TypeScript 支持 ES6。 |
+| 4 | 它不支持强类型或静态类型。 | 它支持强类型或静态类型特性。｜ |
+| 5 | 它只是一种脚本语言。 | 它支持面向对象的编程概念，如类、接口、继承、泛型等。 |
+| 6 | JavaScript 没有可选的参数特性。 | TypeScript 有可选的参数特性。 |
+| 7 | 它是解释语言，这就是为什么它在运行时突出显示错误。｜ 它编译代码并在开发期间突出显示错误。 |  |
+| 8 | JavaScript 不支持模块。 | TypeScript 支持模块。 |
+| 9 | 在这里，number 和 string 是对象。 | 在这里，number 和 string 是接口。 |
+| 10 | JavaScript 不支持泛型。 | TypeScript 支持泛型。 |
+
