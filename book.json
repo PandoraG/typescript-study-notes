@@ -5,17 +5,21 @@
     "language" : "zh-hans",
     "gitbook" : ">=3.0.0",
     "root": ".",
-    "links": {
-        "sidebar": {
-            "TypeScript 学习笔记" : ""
-        }
-    },
     "plugins": [
         "highlight",
         "-search",
         "theme-comscore",
-        "anchor-navigation-ex-toc"
+        "anchor-navigation-ex-toc",
+        "-fontsettings",
+        "-sharing",
+        "-search", 
+        "search-plus"
     ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        }
+    },    
     "styles": {
         "website": "styles/website.css"
     }    
