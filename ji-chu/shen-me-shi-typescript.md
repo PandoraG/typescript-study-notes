@@ -52,3 +52,5 @@
 | 9 | 在这里，number 和 string 是对象。 | 在这里，number 和 string 是接口。 |
 | 10 | JavaScript 不支持泛型。 | TypeScript 支持泛型。 |
 
+
+
