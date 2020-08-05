@@ -1,0 +1,22 @@
+{
+    "title" : "TypeSctipt 学习笔记",
+    "author" : "G-Dragon",
+    "description" : "",
+    "language" : "zh-hans",
+    "gitbook" : ">=3.0.0",
+    "root": ".",
+    "links": {
+        "sidebar": {
+            "TypeScript 学习笔记" : ""
+        }
+    },
+    "plugins": [
+        "highlight",
+        "-search",
+        "theme-comscore",
+        "anchor-navigation-ex-toc"
+    ],
+    "styles": {
+        "website": "styles/website.css"
+    }    
+}
