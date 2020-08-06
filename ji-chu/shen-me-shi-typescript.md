@@ -1,22 +1,19 @@
-# 什么是TypeScript
-
-### 什么是Typescript?
+# 什么是Typescript?
 
 TypeScript 是一种由微软开发和维护的免费开源编程语言。它是一个强类型的 JavaScript 超集，可编译为纯 JavaScript。它是一种用于应用级 JavaScript 开发的语言。对于熟悉 c\#、Java 和所有强类型语言的开发人员来说，TypeScript 非常容易学习和使用。
 
 TypeScript 可以在任何浏览器、主机和操作系统上执行。TypeScript 不是直接在浏览器上运行的。它需要一个编译器来编译和生成 JavaScript 文件。TypeScript 是带有一些附加特性的 ES6 JavaScript 版本。
 
-![](../.gitbook/assets/image.png)
+![](../asserts/imgs/01.png)
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../asserts/imgs/02.png)
 
-### 
 
-### 为什么选择 Typecript
+# 为什么选择 Typecript
 
-#### 优点：
+## 优点：
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../asserts/imgs/03.png)
 
 * Early Detection of Errors  及早发现错误
 * Improves Code Readability 提高代码可读性
@@ -24,7 +21,7 @@ TypeScript 可以在任何浏览器、主机和操作系统上执行。TypeScrip
 * Improved IDE Support 改进的IDE支持
 * Easy Code Analysis  简易代码分析
 
-#### 缺点：
+## 缺点：
 
 任何事物都是有两面性的，我认为 TypeScript 的弊端在于：
 
@@ -37,7 +34,7 @@ TypeScript 可以在任何浏览器、主机和操作系统上执行。TypeScrip
 
 
 
-### TypeScript 和 JavaScript 有什么不同？
+# TypeScript 和 JavaScript 有什么不同？
 
 |  | JavaScript | TypeScript |
 | :--- | :--- | :--- |
