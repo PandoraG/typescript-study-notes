@@ -13,3 +13,28 @@
 #book-search-input {
 	background: #fff !important;
 }
+
+nav.intopic-toc {
+	padding-top: 26px;
+}
+
+nav.intopic-toc h3 {
+	display: none;
+}
+
+nav.intopic-toc ul.navbar-nav > li.active a {
+    /* color: #0099CC; */
+}
+
+nav.intopic-toc .nav > li > a:hover,
+nav.intopic-toc .nav > li > a:focus {
+	color: #0099CC;
+	border-left: 2px solid #0099CC;
+}
+
+nav.intopic-toc .nav > li.active > a,
+nav.intopic-toc .nav > li.active > a:hover,
+nav.intopic-toc .nav > li.active > a:focus {
+	color: #0099CC;
+    border-left: 2px solid #0099CC;
+}

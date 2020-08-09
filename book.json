@@ -9,18 +9,29 @@
         "highlight",
         "-search",
         "theme-comscore",
-        "anchor-navigation-ex-toc",
-        "-fontsettings",
-        "-sharing",
-        "-search", 
-        "search-plus"
+        "-anchor-navigation-ex-toc",
+        "fontsettings",
+        "sharing",
+        "search-plus",
+        "intopic-toc"
     ],
     "pluginsConfig": {
         "theme-default": {
             "showLevel": true
+        },
+        "intopic-toc": {
+            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6",
+            "mode": "nested",
+            "maxDepth": 4,
+            "isCollapsed": false,
+            "isScrollspyActive": true,
+            "visible": true,
+            "label": {
+              "en": "In this article"
+            }
         }
     },    
     "styles": {
-        "website": "styles/website.css"
+        "website": "./styles/website.css"
     }    
 }
