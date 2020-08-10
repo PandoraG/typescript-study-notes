@@ -19,7 +19,7 @@
 
 # 2. `/// <reference path="..." />`
 
-# 2.1 预处理输入文件
+## 2.1 预处理输入文件
 
 TypeScript 编译器会对输入的文件进行预处理来解析所有 **三斜线引用指令**。 在这个过程中，额外的文件会加到编译过程中。
 
@@ -28,8 +28,24 @@ TypeScript 编译器会对输入的文件进行预处理来解析所有 **三斜
 
 # 3. `/// <reference types="..." />`
 
+该指令用来声明 依赖。 一个 `/// <reference types="..." />` 指令声明了对某个包的依赖。仅当在你需要写一个 `d.ts` 文件时才需要使用这个指令！
+
+对包名的解析与在 `import` 语句对模块名的解析类似。 **可以简单地把三斜线类型引用指令当做 import声明的包。**
+
+例如，把 `/// <reference types="node" />` 引入到声明文件，表明这个文件使用了 `@types/node/index.d.ts` 里面声明的名字； 并且，这个包需要在编译阶段与声明文件一起被包含进来。
+
+对于那些在编译阶段生成的声明文件，编译器会自动地添加 `/// <reference types="..." />；` ， 只有在结果文件中使用了 引用的包里的声明时 才会在生成的声明文件里添加 `/// <reference types="..." />` 语句。
+
+若要在 `.ts` 文件里声明一个对 `@types` 包的依赖，使用 `--types` 命令行选项或在 `tsconfig.json` 里指定。 查看 [在 `tsconfig.json` 里使用`@types`，`typeRoots`和`types`](https://www.tslang.cn/docs/handbook/tsconfig-json.html#types-typeroots-and-types)了解更多信息。
+
+
+
 # 4. `/// <reference no-default-lib="true"/>`
 
+该指令用于把一个文件标记成默认库。 通常在 `lib.d.ts` 文件和它不同的变体的顶端都有这个注释。。它告诉编译器在编译过程中不要包含这个默认库（比如，`lib.d.ts`）。 从结果看这与在命令行上使用 `--noLib` 相似。
+
+> 注意:
+> 当传递了 `--skipDefaultLibCheck` 时，编译器只会忽略检查带有 `/// <reference no-default-lib="true"/>` 的文件。
 
 # 5. `/// <amd-module />`
 
