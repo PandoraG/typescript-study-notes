@@ -17,6 +17,7 @@
 * [tsconfig.json](ji-chu-1/tsconfig-json.md)
 * [声明文件](ji-chu-1/define-file.md)
 * [三斜线指令](ji-chu-1/san-xie-xian-command.md)
+* [类型推论](ji-chu-1/type-inference.md)
 
 ## 进阶
 
