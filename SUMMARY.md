@@ -16,6 +16,7 @@
 * [枚举](ji-chu-1/enum.md)
 * [tsconfig.json](ji-chu-1/tsconfig-json.md)
 * [声明文件](ji-chu-1/define-file.md)
+* [三斜线指令](ji-chu-1/san-xie-xian-command.md)
 
 ## 进阶
 
