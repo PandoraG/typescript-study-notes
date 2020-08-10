@@ -49,7 +49,53 @@ TypeScript 编译器会对输入的文件进行预处理来解析所有 **三斜
 
 # 5. `/// <amd-module />`
 
+默认情况下生成的AMD模块都是匿名的。 但是，当一些工具需要处理生成的模块时会产生问题，比如 r.js。
+
+amd-module指令允许给编译器传入一个可选的模块名：
+
+```ts
+// ts 源文件
+///<amd-module name='NamedModule'/>
+export class C {
+}
+
+// 编译后的代码
+define("NamedModule", ["require", "exports"], function (require, exports) {
+    var C = (function () {
+        function C() {
+        }
+        return C;
+    })();
+    exports.C = C;
+});
+
+```
+
+
 
 # 6. `/// <amd-dependency />`
+
+> 注意：
+> 
+> 这个指令被废弃了。使用import "moduleName";语句代替。
+
+`// <amd-dependency path="x" /> `告诉编译器有一个非 TypeScript 模块依赖需要被注入，做为目标模块 `require` 调用的一部分。
+
+`amd-dependency` 指令可以带一个可选的name属性作为 `amd-dependency` 传入的名字：
+
+```ts
+
+// 1 ts源码
+
+/// <amd-dependency path="legacy/moduleA" name="moduleA"/>
+declare var moduleA:MyType
+moduleA.callStuff()
+
+
+// 2 编译后生成的代码
+define(["require", "exports", "legacy/moduleA"], function (require, exports, moduleA) {
+    moduleA.callStuff()
+});
+```
 
 
