@@ -21,11 +21,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
                 
             
                 
@@ -174,6 +178,118 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3" data-path="../ji-chu-1/namespace.html">
+            
+                <a href="../ji-chu-1/namespace.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ji-chu-1/interface.html">
+            
+                <a href="../ji-chu-1/interface.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../ji-chu-1/enum.html">
+            
+                <a href="../ji-chu-1/enum.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../ji-chu-1/tsconfig-json.html">
+            
+                <a href="../ji-chu-1/tsconfig-json.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    tsconfig.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../ji-chu-1/define-file.html">
+            
+                <a href="../ji-chu-1/define-file.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    声明文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Advance/how-ts-work.html">
+            
+                <a href="../Advance/how-ts-work.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    TypeScript 是怎样工作的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../Advance/ts-compile-principle.html">
+            
+                <a href="../Advance/ts-compile-principle.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    TypeScript 编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -219,7 +335,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;"><b>2.2.1. </b>&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</a></li></ul></div><a href="#&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;"><a name="&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1. &#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
+                                <h1 id="&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
+<h2 id="&#x914D;&#x7F6E;ts&#x7F16;&#x8BD1;&#x73AF;&#x5883;">&#x914D;&#x7F6E;ts&#x7F16;&#x8BD1;&#x73AF;&#x5883;</h2>
+<p>&#x76EE;&#x6807;&#xFF1A;&#x5C06;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;ts&#x4EE3;&#x7801;&#x8F6C;&#x6362;&#x8F93;&#x51FA;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x3002;</p>
+<p><code>tsconfig.json</code> &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;compilerOptions&quot;</span>: {
+    <span class="hljs-string">&quot;target&quot;</span>: <span class="hljs-string">&quot;es5&quot;</span>,
+    <span class="hljs-comment">// &quot;module&quot;: &quot;commonjs&apos;&quot;,</span>
+    <span class="hljs-string">&quot;outDir&quot;</span>: <span class="hljs-string">&quot;./js/&quot;</span>,
+    <span class="hljs-string">&quot;rootDir&quot;</span>: <span class="hljs-string">&quot;./tscript/&quot;</span>,
+    <span class="hljs-string">&quot;esModuleInterop&quot;</span>: <span class="hljs-literal">true</span>
+  }
+}
+</code></pre>
+<h2 id="&#x672C;&#x5730;&#x8FD0;&#x884C;-ts-&#x73AF;&#x5883;&#x914D;&#x7F6E;&#xFF1A;">&#x672C;&#x5730;&#x8FD0;&#x884C; ts &#x73AF;&#x5883;&#x914D;&#x7F6E;&#xFF1A;</h2>
+<p>&#x76EE;&#x6807;&#xFF1A;vscode&#x4E2D;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x6267;&#x884C;ts&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5168;&#x5C40;&#x5B89;&#x88C5;ts-node</span>
+npm i -g ts-node
+
+<span class="hljs-comment">// &#x53F3;&#x952E; &#x6267;&#x884C;&#x201C;Run Code&quot;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -263,7 +399,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"本地开发环境搭建","level":"2.2","depth":1,"next":{"title":"什么是类型检查","level":"3.1","depth":1,"path":"ji-chu-1/shen-me-shi-lei-xing-jian-cha.md","ref":"ji-chu-1/shen-me-shi-lei-xing-jian-cha.md","articles":[]},"previous":{"title":"什么是TypeScript","level":"2.1","depth":1,"path":"ji-chu/shen-me-shi-typescript.md","ref":"ji-chu/shen-me-shi-typescript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","theme-comscore","anchor-navigation-ex-toc","-fontsettings","-sharing","-search","search-plus"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"search-plus":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-comscore":{}},"theme":"default","author":"G-Dragon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeSctipt 学习笔记","language":"zh-hans","gitbook":">=3.0.0","description":""},"file":{"path":"ji-chu/ben-di-kai-fa-huan-jing-da-jian.md","mtime":"2020-08-05T15:20:14.130Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-06T15:34:59.454Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"本地开发环境搭建","level":"2.2","depth":1,"next":{"title":"什么是类型检查","level":"3.1","depth":1,"path":"ji-chu-1/shen-me-shi-lei-xing-jian-cha.md","ref":"ji-chu-1/shen-me-shi-lei-xing-jian-cha.md","articles":[]},"previous":{"title":"什么是TypeScript","level":"2.1","depth":1,"path":"ji-chu/shen-me-shi-typescript.md","ref":"ji-chu/shen-me-shi-typescript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","theme-comscore","-anchor-navigation-ex-toc","fontsettings","sharing","search-plus","intopic-toc"],"root":".","styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":4,"isCollapsed":false,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"search-plus":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-comscore":{}},"theme":"default","author":"G-Dragon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeSctipt 学习笔记","language":"zh-hans","gitbook":">=3.0.0","description":""},"file":{"path":"ji-chu/ben-di-kai-fa-huan-jing-da-jian.md","mtime":"2020-08-09T05:04:58.166Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-09T13:10:28.469Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -273,11 +409,31 @@
     <script src="../gitbook/theme.js"></script>
     
         
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
         
     
         
         <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
         
     
         

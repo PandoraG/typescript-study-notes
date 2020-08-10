@@ -37,7 +37,7 @@ myPoint.z // Allowed!
 
 TypeScript 接口是开放式的，这是 TypeScript 的一个重要原则，它允许你使用接口来模仿 JavaScript 的可扩展性。
 
-# 类可以实现接口
+# 1. 类可以实现接口
 
 如果你希望在类中使用必须要被遵循的接口（类）或别人定义的对象结构，可以使用 implements 关键字来确保其兼容性：
 
@@ -76,7 +76,7 @@ let foo: Point = new MyPoint();
 但像 foo: Point = MyPoint 这样的代码，与其并不是一回事。
 ```
 
-# 注意: 并非每个接口都是很容易实现的
+# 2. 注意: 并非每个接口都是很容易实现的
 
 接口旨在声明 JavaScript 中可能存在的任意结构。
 

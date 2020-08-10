@@ -14,6 +14,10 @@
 	background: #fff !important;
 }
 
+nav.intopic-toc {
+	padding-top: 26px;
+}
+
 nav.intopic-toc h3 {
 	display: none;
 }
