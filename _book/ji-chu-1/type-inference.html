@@ -1,0 +1,521 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>类型推论 · TypeSctipt 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="G-Dragon">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Advance/how-ts-work.html" />
+    
+    
+    <link rel="prev" href="san-xie-xian-command.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ji-chu/shen-me-shi-typescript.html">
+            
+                <a href="../ji-chu/shen-me-shi-typescript.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    什么是TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ji-chu/ben-di-kai-fa-huan-jing-da-jian.html">
+            
+                <a href="../ji-chu/ben-di-kai-fa-huan-jing-da-jian.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    本地开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="shen-me-shi-lei-xing-jian-cha.html">
+            
+                <a href="shen-me-shi-lei-xing-jian-cha.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    什么是类型检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="lei-xing.html">
+            
+                <a href="lei-xing.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="namespace.html">
+            
+                <a href="namespace.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="interface.html">
+            
+                <a href="interface.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="enum.html">
+            
+                <a href="enum.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="tsconfig-json.html">
+            
+                <a href="tsconfig-json.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    tsconfig.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="define-file.html">
+            
+                <a href="define-file.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    声明文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="san-xie-xian-command.html">
+            
+                <a href="san-xie-xian-command.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    三斜线指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.9" data-path="type-inference.html">
+            
+                <a href="type-inference.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    类型推论
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Advance/how-ts-work.html">
+            
+                <a href="../Advance/how-ts-work.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    TypeScript 是怎样工作的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../Advance/ts-compile-principle.html">
+            
+                <a href="../Advance/ts-compile-principle.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    TypeScript 编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >类型推论</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1-&#x57FA;&#x7840;">1. &#x57FA;&#x7840;</h1>
+<p>TypeScript&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x4E9B;&#x5730;&#x65B9;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x6307;&#x51FA;&#x7C7B;&#x578B;&#xFF0C;&#x7C7B;&#x578B;&#x63A8;&#x8BBA;&#x4F1A;&#x5E2E;&#x52A9;&#x63D0;&#x4F9B;&#x7C7B;&#x578B;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">let</span> x = <span class="hljs-number">3</span>;  <span class="hljs-comment">// &#x53D8;&#x91CF;x&#x7684;&#x7C7B;&#x578B;&#x88AB;&#x63A8;&#x65AD;&#x4E3A;&#x6570;&#x5B57;&#x3002;</span>
+</code></pre>
+<p>&#x8FD9;&#x79CD;&#x63A8;&#x65AD;&#x53D1;&#x751F;&#x5728;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x548C;&#x6210;&#x5458;&#x3001;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x503C;&#x548C;&#x51B3;&#x5B9A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x65F6;&#x3002;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7C7B;&#x578B;&#x63A8;&#x8BBA;&#x662F;&#x76F4;&#x622A;&#x4E86;&#x5F53;&#x5730;&#x3002; &#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x518D;&#x770B;&#x770B;&#x7C7B;&#x578B;&#x63A8;&#x8BBA;&#x65F6;&#x7684;&#x7EC6;&#x5FAE;&#x5DEE;&#x522B;&#x3002;</p>
+<h1 id="2-&#x6700;&#x4F73;&#x901A;&#x7528;&#x7C7B;&#x578B;">2. &#x6700;&#x4F73;&#x901A;&#x7528;&#x7C7B;&#x578B;</h1>
+<p>&#x770B;&#x4E0B;&#x9762;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">let</span> x = [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">null</span>]; <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x6709;&#x4E24;&#x79CD;&#x9009;&#x62E9;&#xFF1A; number&#x548C;null&#x3002;</span>
+</code></pre>
+<p>&#x6570;&#x7EC4;&#x5185;&#x5305;&#x542B;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5; TS &#x4F1A;&#x5C1D;&#x8BD5;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x63A8;&#x65AD;&#x51FA;&#x4E00;&#x4E2A;&#x6700;&#x5408;&#x9002;&#x7684; <strong>&#x901A;&#x7528;&#x7C7B;&#x578B;</strong>&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;<strong>&#x8BA1;&#x7B97;&#x901A;&#x7528;&#x7C7B;&#x578B;&#x7B97;&#x6CD5;</strong> &#x4F1A;&#x8003;&#x8651;&#x6240;&#x6709;&#x7684;&#x5019;&#x9009;&#x7C7B;&#x578B;&#xFF0C;&#x5E76;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x517C;&#x5BB9;&#x6240;&#x6709;&#x5019;&#x9009;&#x7C7B;&#x578B;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x6700;&#x7EC8;&#x7684;&#x901A;&#x7528;&#x7C7B;&#x578B;&#x53D6;&#x81EA;&#x5019;&#x9009;&#x7C7B;&#x578B;&#xFF0C;&#x6709;&#x4E9B;&#x65F6;&#x5019;&#x5019;&#x9009;&#x7C7B;&#x578B;&#x5171;&#x4EAB;&#x76F8;&#x540C;&#x7684;&#x901A;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x80FD;&#x505A;&#x4E3A;&#x6240;&#x6709;&#x5019;&#x9009;&#x7C7B;&#x578B;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">let</span> zoo = [<span class="hljs-keyword">new</span> Rhino(), <span class="hljs-keyword">new</span> Elephant(), <span class="hljs-keyword">new</span> Snake()];
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8BA9; zoo &#x88AB;&#x63A8;&#x65AD;&#x4E3A; <code>Animal[]</code> &#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x91CC;&#x6CA1;&#x6709;&#x5BF9;&#x8C61;&#x662F; <code>Animal</code> &#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x80FD;&#x63A8;&#x65AD;&#x51FA;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x3002; &#x4E3A;&#x4E86;&#x66F4;&#x6B63;&#xFF0C;&#x5F53;&#x5019;&#x9009;&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x660E;&#x786E;&#x7684;&#x6307;&#x51FA;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">let</span> zoo: Animal[] = [<span class="hljs-keyword">new</span> Rhino(), <span class="hljs-keyword">new</span> Elephant(), <span class="hljs-keyword">new</span> Snake()];
+</code></pre>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6700;&#x4F73;&#x901A;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x8BDD;&#xFF0C;&#x7C7B;&#x578B;&#x63A8;&#x65AD;&#x7684;&#x7ED3;&#x679C;&#x4E3A; <strong>&#x8054;&#x5408;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#xFF0C;(Rhino | Elephant | Snake)[]</strong>&#x3002;</p>
+<h1 id="3-&#x4E0A;&#x4E0B;&#x6587;&#x7C7B;&#x578B;">3. &#x4E0A;&#x4E0B;&#x6587;&#x7C7B;&#x578B;</h1>
+<p>TypeScript &#x7C7B;&#x578B;&#x63A8;&#x8BBA;&#x4E5F;&#x53EF;&#x80FD;&#x6309;&#x7167;&#x76F8;&#x53CD;&#x7684;&#x65B9;&#x5411;&#x8FDB;&#x884C;&#x3002; &#x8FD9;&#x88AB;&#x53EB;&#x505A;&#x201C;&#x6309;&#x4E0A;&#x4E0B;&#x6587;&#x5F52;&#x7C7B;&#x201D;&#x3002;</p>
+<ul>
+<li>&#x6309;&#x4E0A;&#x4E0B;&#x6587;&#x5F52;&#x7C7B; &#x4F1A;&#x53D1;&#x751F;&#x5728;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x4E0E;&#x6240;&#x5904;&#x7684;&#x4F4D;&#x7F6E;&#x76F8;&#x5173;&#x65F6;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-ts"><span class="hljs-built_in">window</span>.onmousedown = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">mouseEvent</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(mouseEvent.button);  <span class="hljs-comment">//&lt;- Error</span>
+};
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x9519;&#x8BEF;&#xFF0C;TypeScript&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x5668;&#x4F7F;&#x7528; Window.onmousedown &#x51FD;&#x6570;&#x7684;&#x7C7B;&#x578B;&#x6765;&#x63A8;&#x65AD;&#x53F3;&#x8FB9;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x4E5F;&#x5C31;&#x80FD;&#x591F;&#x63A8;&#x65AD;&#x51FA;&#x53C2;&#x6570; mouseEvent &#x7684;&#x7C7B;&#x578B;&#x4E86;&#x3002; &#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x662F;&#x5728;&#x4E0A;&#x4E0B;&#x6587;&#x7C7B;&#x578B;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C; &#x90A3;&#x4E48;&#x53C2;&#x6570; mouseEvent &#x7684;&#x7C7B;&#x578B;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E3A;any &#x8FD9;&#x6837;&#x624D;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E0A;&#x4E0B;&#x6587;&#x7C7B;&#x578B;&#x8868;&#x8FBE;&#x5F0F;&#x5305;&#x542B;&#x4E86;&#x660E;&#x786E;&#x7684;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#xFF0C;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x7C7B;&#x578B;&#x5C31;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002; &#x91CD;&#x5199;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-ts"><span class="hljs-built_in">window</span>.onmousedown = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">mouseEvent: <span class="hljs-built_in">any</span></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(mouseEvent.button);  <span class="hljs-comment">//&lt;- &#x73B0;&#x5728;&#x4E0D;&#x4F1A;&#x6709;&#x62A5;&#x9519;&#x4E86;</span>
+};
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x9762;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x6709;&#x660E;&#x786E;&#x7684; <em><strong>&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x6CE8;&#x89E3;</strong></em>&#xFF0C;&#x4E0A;&#x4E0B;&#x6587;&#x7C7B;&#x578B;&#x88AB;&#x5FFD;&#x7565; &#x56E0;&#x6B64;&#x8FD9;&#x91CC;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x4E0A;&#x4E0B;&#x6587;&#x7C7B;&#x578B;&#x3002;&#x3002; &#x6240;&#x4EE5; &#x4E5F;&#x5C31;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<ul>
+<li><p>&#x4E0A;&#x4E0B;&#x6587;&#x5F52;&#x7C7B;&#x4F1A;&#x5728;&#x5F88;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x5230;&#xFF1A;</p>
+<ul>
+<li>&#x5177;&#x6709;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;</li>
+<li>&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x53F3;&#x8FB9;</li>
+<li>&#x7C7B;&#x578B;&#x65AD;&#x8A00;</li>
+<li>&#x5BF9;&#x8C61;&#x6210;&#x5458;</li>
+<li>&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;</li>
+<li>&#x8FD4;&#x56DE;&#x503C;&#x8BED;&#x53E5;</li>
+</ul>
+</li>
+<li><p>&#x4E0A;&#x4E0B;&#x6587;&#x7C7B;&#x578B; &#x4E5F;&#x4F1A;&#x505A;&#x4E3A;&#x6700;&#x4F73;&#x901A;&#x7528;&#x7C7B;&#x578B;&#x7684; &#x5019;&#x9009;&#x7C7B;&#x578B;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+</li>
+</ul>
+<pre><code class="lang-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createZoo</span>(<span class="hljs-params"></span>): <span class="hljs-title">Animal</span>[] </span>{
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">new</span> Rhino(), <span class="hljs-keyword">new</span> Elephant(), <span class="hljs-keyword">new</span> Snake()];
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6700;&#x4F73;&#x901A;&#x7528;&#x7C7B;&#x578B;&#x6709;4&#x4E2A;&#x5019;&#x9009;&#x8005;&#xFF1A;Animal&#xFF0C;Rhino&#xFF0C;Elephant&#x548C;Snake&#x3002; &#x5F53;&#x7136;&#xFF0C; Animal&#x4F1A;&#x88AB;&#x505A;&#x4E3A;&#x6700;&#x4F73;&#x901A;&#x7528;&#x7C7B;&#x578B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="san-xie-xian-command.html" class="navigation navigation-prev " aria-label="Previous page: 三斜线指令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Advance/how-ts-work.html" class="navigation navigation-next " aria-label="Next page: TypeScript 是怎样工作的">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"类型推论","level":"3.9","depth":1,"next":{"title":"TypeScript 是怎样工作的","level":"4.1","depth":1,"path":"Advance/how-ts-work.md","ref":"Advance/how-ts-work.md","articles":[]},"previous":{"title":"三斜线指令","level":"3.8","depth":1,"path":"ji-chu-1/san-xie-xian-command.md","ref":"ji-chu-1/san-xie-xian-command.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","theme-comscore","-anchor-navigation-ex-toc","fontsettings","sharing","search-plus","intopic-toc","livereload"],"root":".","styles":{"website":"./styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":4,"isCollapsed":false,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"livereload":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"G-Dragon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeSctipt 学习笔记","language":"zh-hans","gitbook":">=3.0.0","description":""},"file":{"path":"ji-chu-1/type-inference.md","mtime":"2020-08-10T14:30:04.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-10T14:30:24.376Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

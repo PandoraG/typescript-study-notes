@@ -253,6 +253,36 @@
             
         </li>
     
+        <li class="chapter " data-level="3.8" data-path="san-xie-xian-command.html">
+            
+                <a href="san-xie-xian-command.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    三斜线指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="type-inference.html">
+            
+                <a href="type-inference.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    类型推论
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -368,7 +398,7 @@
 myPoint.z <span class="hljs-comment">// Allowed!</span>
 </code></pre>
 <p>TypeScript &#x63A5;&#x53E3;&#x662F;&#x5F00;&#x653E;&#x5F0F;&#x7684;&#xFF0C;&#x8FD9;&#x662F; TypeScript &#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x539F;&#x5219;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x4F60;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x6765;&#x6A21;&#x4EFF; JavaScript &#x7684;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x3002;</p>
-<h1 id="&#x7C7B;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;">&#x7C7B;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;</h1>
+<h1 id="1-&#x7C7B;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;">1. &#x7C7B;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;</h1>
 <p>&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x5728;&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;&#x5FC5;&#x987B;&#x8981;&#x88AB;&#x9075;&#x5FAA;&#x7684;&#x63A5;&#x53E3;&#xFF08;&#x7C7B;&#xFF09;&#x6216;&#x522B;&#x4EBA;&#x5B9A;&#x4E49;&#x7684;&#x5BF9;&#x8C61;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; implements &#x5173;&#x952E;&#x5B57;&#x6765;&#x786E;&#x4FDD;&#x5176;&#x517C;&#x5BB9;&#x6027;&#xFF1A;</p>
 <pre><code class="lang-ts"><span class="hljs-keyword">interface</span> Point {
   x: <span class="hljs-built_in">number</span>;
@@ -397,7 +427,7 @@ myPoint.z <span class="hljs-comment">// Allowed!</span>
 <pre><code class="lang-ts"><span class="hljs-keyword">let</span> foo: Point = <span class="hljs-keyword">new</span> MyPoint();
 &#x4F46;&#x50CF; foo: Point = MyPoint &#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E0E;&#x5176;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x56DE;&#x4E8B;&#x3002;
 </code></pre>
-<h1 id="&#x6CE8;&#x610F;-&#x5E76;&#x975E;&#x6BCF;&#x4E2A;&#x63A5;&#x53E3;&#x90FD;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x7684;">&#x6CE8;&#x610F;: &#x5E76;&#x975E;&#x6BCF;&#x4E2A;&#x63A5;&#x53E3;&#x90FD;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x7684;</h1>
+<h1 id="2-&#x6CE8;&#x610F;-&#x5E76;&#x975E;&#x6BCF;&#x4E2A;&#x63A5;&#x53E3;&#x90FD;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x7684;">2. &#x6CE8;&#x610F;: &#x5E76;&#x975E;&#x6BCF;&#x4E2A;&#x63A5;&#x53E3;&#x90FD;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x7684;</h1>
 <p>&#x63A5;&#x53E3;&#x65E8;&#x5728;&#x58F0;&#x660E; JavaScript &#x4E2D;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x4EFB;&#x610F;&#x7ED3;&#x6784;&#x3002;</p>
 <p>&#x601D;&#x8003;&#x4E00;&#x4E0B;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; new &#x8C03;&#x7528;&#x67D0;&#x4E9B;&#x5185;&#x5BB9;&#xFF1A;</p>
 <pre><code class="lang-ts"><span class="hljs-keyword">interface</span> Crazy {
@@ -460,7 +490,7 @@ myPoint.z <span class="hljs-comment">// Allowed!</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"接口","level":"3.4","depth":1,"next":{"title":"枚举","level":"3.5","depth":1,"path":"ji-chu-1/enum.md","ref":"ji-chu-1/enum.md","articles":[]},"previous":{"title":"命名空间","level":"3.3","depth":1,"path":"ji-chu-1/namespace.md","ref":"ji-chu-1/namespace.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","theme-comscore","-anchor-navigation-ex-toc","fontsettings","sharing","search-plus","intopic-toc"],"root":".","styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":4,"isCollapsed":false,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"search-plus":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-comscore":{}},"theme":"default","author":"G-Dragon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeSctipt 学习笔记","language":"zh-hans","gitbook":">=3.0.0","description":""},"file":{"path":"ji-chu-1/interface.md","mtime":"2020-08-08T11:06:22.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-09T13:10:28.469Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"接口","level":"3.4","depth":1,"next":{"title":"枚举","level":"3.5","depth":1,"path":"ji-chu-1/enum.md","ref":"ji-chu-1/enum.md","articles":[]},"previous":{"title":"命名空间","level":"3.3","depth":1,"path":"ji-chu-1/namespace.md","ref":"ji-chu-1/namespace.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","theme-comscore","-anchor-navigation-ex-toc","fontsettings","sharing","search-plus","intopic-toc"],"root":".","styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":4,"isCollapsed":false,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"search-plus":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-comscore":{}},"theme":"default","author":"G-Dragon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeSctipt 学习笔记","language":"zh-hans","gitbook":">=3.0.0","description":""},"file":{"path":"ji-chu-1/interface.md","mtime":"2020-08-09T15:35:24.447Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-10T14:31:26.055Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

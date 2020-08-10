@@ -1,0 +1,534 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>三斜线指令 · TypeSctipt 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="G-Dragon">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="type-inference.html" />
+    
+    
+    <link rel="prev" href="define-file.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ji-chu/shen-me-shi-typescript.html">
+            
+                <a href="../ji-chu/shen-me-shi-typescript.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    什么是TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ji-chu/ben-di-kai-fa-huan-jing-da-jian.html">
+            
+                <a href="../ji-chu/ben-di-kai-fa-huan-jing-da-jian.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    本地开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="shen-me-shi-lei-xing-jian-cha.html">
+            
+                <a href="shen-me-shi-lei-xing-jian-cha.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    什么是类型检查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="lei-xing.html">
+            
+                <a href="lei-xing.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="namespace.html">
+            
+                <a href="namespace.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="interface.html">
+            
+                <a href="interface.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="enum.html">
+            
+                <a href="enum.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="tsconfig-json.html">
+            
+                <a href="tsconfig-json.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    tsconfig.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="define-file.html">
+            
+                <a href="define-file.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    声明文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.8" data-path="san-xie-xian-command.html">
+            
+                <a href="san-xie-xian-command.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    三斜线指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="type-inference.html">
+            
+                <a href="type-inference.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    类型推论
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">进阶</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Advance/how-ts-work.html">
+            
+                <a href="../Advance/how-ts-work.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    TypeScript 是怎样工作的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../Advance/ts-compile-principle.html">
+            
+                <a href="../Advance/ts-compile-principle.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    TypeScript 编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >三斜线指令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1-&#x4EC0;&#x4E48;&#x662F;&#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#xFF1F;">1. &#x4EC0;&#x4E48;&#x662F;&#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#xFF1F;</h1>
+<p>&#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#xFF1A; &#x662F;&#x6307;&#x5305;&#x542B;&#x5355;&#x4E2A;XML&#x6807;&#x7B7E;&#x7684;&#x5355;&#x884C;&#x6CE8;&#x91CA;&#xFF0C; &#x6CE8;&#x91CA;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x505A;&#x4E3A;&#x7F16;&#x8BD1;&#x5668;&#x6307;&#x4EE4;&#x4F7F;&#x7528;&#x3002;&#x5B83;&#x544A;&#x8BC9;&#x7F16;&#x8BD1;&#x5668;&#x5728;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x4E2D;&#x8981;&#x5F15;&#x5165;&#x7684;&#x989D;&#x5916;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-ts"><span class="hljs-comment">/// &lt;reference path=&quot;...&quot; /&gt;  // &#x6307;&#x4EE4;&#x662F;&#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#x4E2D;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x4E00;&#x79CD;&#x3002; &#x5B83;&#x7528;&#x4E8E;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x95F4;&#x7684; &#x4F9D;&#x8D56;&#x3002;</span>
+</code></pre>
+<blockquote>
+<p>&#x26A0;&#xFE0F; &#x6CE8;&#x610F;&#xFF1A;
+    1) &#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#x4EC5;&#x53EF;&#x653E;&#x5728;&#x5305;&#x542B;&#x5B83;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x9876;&#x7AEF;&#x3002;
+    2) &#x4E00;&#x4E2A;&#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#x7684;&#x524D;&#x9762;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5355;&#x884C;&#x6216;&#x591A;&#x884C;&#x6CE8;&#x91CA;&#xFF0C;&#x8FD9;&#x5305;&#x62EC;&#x5176;&#x5B83;&#x7684;&#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#x3002;
+    3) &#x5982;&#x679C;&#x5B83;&#x4EEC;&#x51FA;&#x73B0;&#x5728;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x6216;&#x58F0;&#x660E;&#x4E4B;&#x540E;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4EEC;&#x4F1A;&#x88AB;&#x5F53;&#x505A;&#x666E;&#x901A;&#x7684;&#x5355;&#x884C;&#x6CE8;&#x91CA;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x6DB5;&#x4E49;&#x3002;
+    4) &#x5F15;&#x7528;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x62A5;&#x9519;&#x3002; &#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7528;&#x4E09;&#x659C;&#x7EBF;&#x6307;&#x4EE4;&#x5F15;&#x7528;&#x81EA;&#x5DF1;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<p>&#x26A0;&#xFE0F; &#x6CE8;&#x610F;&#xFF1A;
+&#x5F53;&#x4F7F;&#x7528;--out&#x6216;--outFile&#x65F6;&#xFF0C;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x505A;&#x4E3A;&#x8C03;&#x6574;&#x8F93;&#x51FA;&#x5185;&#x5BB9;&#x987A;&#x5E8F;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x3002; &#x6587;&#x4EF6;&#x5728;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x4E0E;&#x7ECF;&#x8FC7;&#x9884;&#x5904;&#x7406;&#x540E;&#x7684;&#x8F93;&#x5165;&#x987A;&#x5E8F;&#x4E00;&#x81F4;&#x3002;</p>
+</blockquote>
+<h1 id="2--reference-path-">2. <code>/// &lt;reference path=&quot;...&quot; /&gt;</code></h1>
+<h2 id="21-&#x9884;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6;">2.1 &#x9884;&#x5904;&#x7406;&#x8F93;&#x5165;&#x6587;&#x4EF6;</h2>
+<p>TypeScript &#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5BF9;&#x8F93;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x9884;&#x5904;&#x7406;&#x6765;&#x89E3;&#x6790;&#x6240;&#x6709; <strong>&#x4E09;&#x659C;&#x7EBF;&#x5F15;&#x7528;&#x6307;&#x4EE4;</strong>&#x3002; &#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x989D;&#x5916;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x52A0;&#x5230;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x4E2D;&#x3002;</p>
+<p>&#x9884;&#x5904;&#x7406;&#x662F;&#x4EE5;&#x4E00;&#x4E9B;&#x6839;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x7684;&#xFF0C; &#x6240;&#x8C13;&#x7684;&#x6839;&#x6587;&#x4EF6;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6307;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x662F;&#x5728; <code>tsconfig.json</code> &#x4E2D;&#x7684; <code>&quot;files&quot;</code> &#x5217;&#x8868;&#x91CC;&#x7684;&#x6587;&#x4EF6;&#x3002; &#x8FD9;&#x4E9B;&#x6839;&#x6587;&#x4EF6;&#x6309;&#x6307;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x9884;&#x5904;&#x7406;&#x3002; &#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x52A0;&#x5165;&#x5217;&#x8868;&#x524D;&#xFF0C;&#x5B83;&#x6240;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709; <strong>&#x4E09;&#x659C;&#x7EBF;&#x5F15;&#x7528;</strong> &#x90FD;&#x8981;&#x88AB;&#x5904;&#x7406;&#xFF0C;&#x8FD8;&#x6709;&#x5B83;&#x4EEC;&#x5305;&#x542B;&#x7684;&#x76EE;&#x6807;&#x3002; &#x4E09;&#x659C;&#x7EBF;&#x5F15;&#x7528;&#x662F;&#x4EE5;&#x5B83;&#x4EEC;&#x5728;&#x6587;&#x4EF6;&#x91CC;&#x51FA;&#x73B0;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528; <strong>&#x6DF1;&#x5EA6;&#x4F18;&#x5148;</strong> &#x7684;&#x65B9;&#x5F0F;&#x89E3;&#x6790;&#x7684;&#x3002;</p>
+<h1 id="3--reference-types-">3. <code>/// &lt;reference types=&quot;...&quot; /&gt;</code></h1>
+<p>&#x8BE5;&#x6307;&#x4EE4;&#x7528;&#x6765;&#x58F0;&#x660E; &#x4F9D;&#x8D56;&#x3002; &#x4E00;&#x4E2A; <code>/// &lt;reference types=&quot;...&quot; /&gt;</code> &#x6307;&#x4EE4;&#x58F0;&#x660E;&#x4E86;&#x5BF9;&#x67D0;&#x4E2A;&#x5305;&#x7684;&#x4F9D;&#x8D56;&#x3002;&#x4EC5;&#x5F53;&#x5728;&#x4F60;&#x9700;&#x8981;&#x5199;&#x4E00;&#x4E2A; <code>d.ts</code> &#x6587;&#x4EF6;&#x65F6;&#x624D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#xFF01;</p>
+<p>&#x5BF9;&#x5305;&#x540D;&#x7684;&#x89E3;&#x6790;&#x4E0E;&#x5728; <code>import</code> &#x8BED;&#x53E5;&#x5BF9;&#x6A21;&#x5757;&#x540D;&#x7684;&#x89E3;&#x6790;&#x7C7B;&#x4F3C;&#x3002; <strong>&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x628A;&#x4E09;&#x659C;&#x7EBF;&#x7C7B;&#x578B;&#x5F15;&#x7528;&#x6307;&#x4EE4;&#x5F53;&#x505A; import&#x58F0;&#x660E;&#x7684;&#x5305;&#x3002;</strong></p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x628A; <code>/// &lt;reference types=&quot;node&quot; /&gt;</code> &#x5F15;&#x5165;&#x5230;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#xFF0C;&#x8868;&#x660E;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x4E86; <code>@types/node/index.d.ts</code> &#x91CC;&#x9762;&#x58F0;&#x660E;&#x7684;&#x540D;&#x5B57;&#xFF1B; &#x5E76;&#x4E14;&#xFF0C;&#x8FD9;&#x4E2A;&#x5305;&#x9700;&#x8981;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x4E0E;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x4E00;&#x8D77;&#x88AB;&#x5305;&#x542B;&#x8FDB;&#x6765;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x751F;&#x6210;&#x7684;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x6DFB;&#x52A0; <code>/// &lt;reference types=&quot;...&quot; /&gt;&#xFF1B;</code> &#xFF0C; &#x53EA;&#x6709;&#x5728;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x4E86; &#x5F15;&#x7528;&#x7684;&#x5305;&#x91CC;&#x7684;&#x58F0;&#x660E;&#x65F6; &#x624D;&#x4F1A;&#x5728;&#x751F;&#x6210;&#x7684;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#x91CC;&#x6DFB;&#x52A0; <code>/// &lt;reference types=&quot;...&quot; /&gt;</code> &#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x82E5;&#x8981;&#x5728; <code>.ts</code> &#x6587;&#x4EF6;&#x91CC;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5BF9; <code>@types</code> &#x5305;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x4F7F;&#x7528; <code>--types</code> &#x547D;&#x4EE4;&#x884C;&#x9009;&#x9879;&#x6216;&#x5728; <code>tsconfig.json</code> &#x91CC;&#x6307;&#x5B9A;&#x3002; &#x67E5;&#x770B; <a href="https://www.tslang.cn/docs/handbook/tsconfig-json.html#types-typeroots-and-types" target="_blank">&#x5728; <code>tsconfig.json</code> &#x91CC;&#x4F7F;&#x7528;<code>@types</code>&#xFF0C;<code>typeRoots</code>&#x548C;<code>types</code></a>&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+<h1 id="4--reference-no-default-libtrue">4. <code>/// &lt;reference no-default-lib=&quot;true&quot;/&gt;</code></h1>
+<p>&#x8BE5;&#x6307;&#x4EE4;&#x7528;&#x4E8E;&#x628A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6807;&#x8BB0;&#x6210;&#x9ED8;&#x8BA4;&#x5E93;&#x3002; &#x901A;&#x5E38;&#x5728; <code>lib.d.ts</code> &#x6587;&#x4EF6;&#x548C;&#x5B83;&#x4E0D;&#x540C;&#x7684;&#x53D8;&#x4F53;&#x7684;&#x9876;&#x7AEF;&#x90FD;&#x6709;&#x8FD9;&#x4E2A;&#x6CE8;&#x91CA;&#x3002;&#x3002;&#x5B83;&#x544A;&#x8BC9;&#x7F16;&#x8BD1;&#x5668;&#x5728;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x8981;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x9ED8;&#x8BA4;&#x5E93;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;<code>lib.d.ts</code>&#xFF09;&#x3002; &#x4ECE;&#x7ED3;&#x679C;&#x770B;&#x8FD9;&#x4E0E;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E0A;&#x4F7F;&#x7528; <code>--noLib</code> &#x76F8;&#x4F3C;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;:
+&#x5F53;&#x4F20;&#x9012;&#x4E86; <code>--skipDefaultLibCheck</code> &#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x53EA;&#x4F1A;&#x5FFD;&#x7565;&#x68C0;&#x67E5;&#x5E26;&#x6709; <code>/// &lt;reference no-default-lib=&quot;true&quot;/&gt;</code> &#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+</blockquote>
+<h1 id="5--amd-module-">5. <code>/// &lt;amd-module /&gt;</code></h1>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x751F;&#x6210;&#x7684;AMD&#x6A21;&#x5757;&#x90FD;&#x662F;&#x533F;&#x540D;&#x7684;&#x3002; &#x4F46;&#x662F;&#xFF0C;&#x5F53;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x9700;&#x8981;&#x5904;&#x7406;&#x751F;&#x6210;&#x7684;&#x6A21;&#x5757;&#x65F6;&#x4F1A;&#x4EA7;&#x751F;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982; r.js&#x3002;</p>
+<p>amd-module&#x6307;&#x4EE4;&#x5141;&#x8BB8;&#x7ED9;&#x7F16;&#x8BD1;&#x5668;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x6A21;&#x5757;&#x540D;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-comment">// ts &#x6E90;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment">///&lt;amd-module name=&apos;NamedModule&apos;/&gt;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> C {
+}
+
+<span class="hljs-comment">// &#x7F16;&#x8BD1;&#x540E;&#x7684;&#x4EE3;&#x7801;</span>
+define(<span class="hljs-string">&quot;NamedModule&quot;</span>, [<span class="hljs-string">&quot;require&quot;</span>, <span class="hljs-string">&quot;exports&quot;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"><span class="hljs-built_in">require</span>, exports</span>) </span>{
+    <span class="hljs-keyword">var</span> C = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">C</span>(<span class="hljs-params"></span>) </span>{
+        }
+        <span class="hljs-keyword">return</span> C;
+    })();
+    exports.C = C;
+});
+</code></pre>
+<h1 id="6--amd-dependency-">6. <code>/// &lt;amd-dependency /&gt;</code></h1>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<p>&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#x88AB;&#x5E9F;&#x5F03;&#x4E86;&#x3002;&#x4F7F;&#x7528;import &quot;moduleName&quot;;&#x8BED;&#x53E5;&#x4EE3;&#x66FF;&#x3002;</p>
+</blockquote>
+<p><code>// &lt;amd-dependency path=&quot;x&quot; /&gt;</code>&#x544A;&#x8BC9;&#x7F16;&#x8BD1;&#x5668;&#x6709;&#x4E00;&#x4E2A;&#x975E; TypeScript &#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x9700;&#x8981;&#x88AB;&#x6CE8;&#x5165;&#xFF0C;&#x505A;&#x4E3A;&#x76EE;&#x6807;&#x6A21;&#x5757; <code>require</code> &#x8C03;&#x7528;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p><code>amd-dependency</code> &#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x5E26;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;name&#x5C5E;&#x6027;&#x4F5C;&#x4E3A; <code>amd-dependency</code> &#x4F20;&#x5165;&#x7684;&#x540D;&#x5B57;&#xFF1A;</p>
+<pre><code class="lang-ts">
+<span class="hljs-comment">// 1 ts&#x6E90;&#x7801;</span>
+
+<span class="hljs-comment">/// &lt;amd-dependency path=&quot;legacy/moduleA&quot; name=&quot;moduleA&quot;/&gt;</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-keyword">var</span> moduleA:MyType
+moduleA.callStuff()
+
+
+<span class="hljs-comment">// 2 &#x7F16;&#x8BD1;&#x540E;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;</span>
+define([<span class="hljs-string">&quot;require&quot;</span>, <span class="hljs-string">&quot;exports&quot;</span>, <span class="hljs-string">&quot;legacy/moduleA&quot;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"><span class="hljs-built_in">require</span>, exports, moduleA</span>) </span>{
+    moduleA.callStuff()
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="define-file.html" class="navigation navigation-prev " aria-label="Previous page: 声明文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="type-inference.html" class="navigation navigation-next " aria-label="Next page: 类型推论">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"三斜线指令","level":"3.8","depth":1,"next":{"title":"类型推论","level":"3.9","depth":1,"path":"ji-chu-1/type-inference.md","ref":"ji-chu-1/type-inference.md","articles":[]},"previous":{"title":"声明文件","level":"3.7","depth":1,"path":"ji-chu-1/define-file.md","ref":"ji-chu-1/define-file.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","theme-comscore","-anchor-navigation-ex-toc","fontsettings","sharing","search-plus","intopic-toc","livereload"],"root":".","styles":{"website":"./styles/website.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":4,"isCollapsed":false,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"livereload":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"search-plus":{}},"theme":"default","author":"G-Dragon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TypeSctipt 学习笔记","language":"zh-hans","gitbook":">=3.0.0","description":""},"file":{"path":"ji-chu-1/san-xie-xian-command.md","mtime":"2020-08-10T14:30:04.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-10T14:30:24.376Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
